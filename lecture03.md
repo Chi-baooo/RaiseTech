@@ -2,17 +2,17 @@
 
 ##課題提出
 
-![画像1.jpg](APサーバーの名前とVer..png)
+![画像1](APサーバーの名前とVer..png)
 
-![画像2.jpg](APサーバー停止.png)
+![画像2](APサーバー停止.png)
 
-![画像3.jpg](MySQL Ver..png)
+![画像3](MySQL_Ver..png)
 
-![画像4.jpg](MySQL 停止.png)
+![画像4](MySQL_Ver停止.png)
 
-![画像5.jpg](Webブラウザ　接続確認.png)
+![画像5](Webブラウザ_接続確認.png)
 
-![画像6.jpg](サンプルアプリケーションをCloud9で起動.png)
+![画像6](サンプルアプリケーションをCloud9で起動.png)
 
 - 今回の課題から学んだこと、感じたこと
 
