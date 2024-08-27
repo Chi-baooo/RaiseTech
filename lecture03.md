@@ -2,20 +2,39 @@
 
 ## 課題提出
 
-![APサーバー停止](https://github.com/user-attachments/assets/7d5c480d-b1a8-4c98-ac1b-90b3080d86c3)
+![APサーバー停止](image/APサーバーの名前とVer..png)
 
-![APサーバーの名前とVer](https://github.com/user-attachments/assets/b467e686-0d72-4ca3-b4fb-54aa4902990a)
+![APサーバーの名前とVer](image/APサーバー停止.png)
 
-![サンプルアプリケーションをCloud9で起動](https://github.com/user-attachments/assets/5ef13d47-5be5-408f-b88c-94e18850ca87)
+![サンプルアプリケーションをCloud9で起動](image/サンプルアプリケーションをCloud9で起動.png)
 
-![Webブラウザ　接続確認](https://github.com/user-attachments/assets/89417cf4-dfe5-4e59-a56f-b06f476a4590)
+![Webブラウザ　接続確認](image/Webブラウザ　接続確認.png)
 
-![MySQL 停止](https://github.com/user-attachments/assets/fca7c004-9f66-45eb-8de6-00c3e3a3df68)
+![MySQL 停止](image/MySQL%20停止.png)
 
-![MySQL Ver](https://github.com/user-attachments/assets/028972d0-ea56-43d2-8d5e-50f8d62fc35c)
+![MySQL Ver](image/MySQL%20Ver..png)
 
 - 今回の課題から学んだこと、感じたこと
 
 第二回課題提出からかなり期間が開いてしまったため、Githubへのプッシュ方法が曖昧となってしまっていた。
 
-またMarkdawnnでの画像挿入に苦戦しました。
+・Markdawnnでの画像挿入に苦戦しました。
+
+1.ローカルのリポジトリ名をリモートのものとは別で作らなければいけなかった。
+lecture03　→　fix/lecture03　/　lecture03
+
+2.git remote -vで確認したところ、おそらくデフォルトで保存されているであろうoriginが設定されていなかった。
+　→git remote add origin "URL"で保存しなおしました。
+※おそらく"git init"？でリポジトリを初期化したままにしたせい
+
+↓origin設定後
+
+３.おそらくここでgit pullが可能になったのか...?
+or " git pull origin lecture03 --rebase"でローカルリポジトリ"fix/lecture03"がリモートリポジトリとのズレがなくなった。（最新に更新できた）
+
+↓メールアドレス設定によるエラー発生
+
+4.git config --global user.email "メールアドレス"で、Githubのメールアドレスを設定し直しました。
+
+5."git push origin fix/lecture03:lecture03"で、無事pushしたいフォルダのみを反映できました。
+　→"git push <リモート名（リモートリポジトリの場所）> <ローカルブランチ名>:<リモートブランチ名>"を指定する。
